@@ -1,0 +1,329 @@
+body{
+    display         : flex;
+    justify-content : center;
+    background-color: rgb(0,0,0, 0.9);
+}
+.wrapper{
+    width        : 400px;
+    min-width    : 370px;
+    height       : 550px;
+    margin-top   : 30px;
+    border-radius: 7px;
+    border       : 6px groove rgb(239, 247, 193)
+}
+.preGamePages{
+    background-image    : url(./image/backgroundMenu.jpeg);
+    background-repeat   : no-repeat;
+    background-position : center center;
+    -moz-background-size: cover;
+    -o-background-size  : cover;
+    background-size     : cover;
+    width               : 400px;
+    min-width           : 370px;
+    height              : 550px;
+}
+.modalWindowMenu {
+    width          : 100%;
+    height         : 100%;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+    background     : inherit;
+}
+.gameNameHeader{
+    height          : 72px;
+    line-height     : 72px;
+    border-radius   : 50px;
+    display         : flex;
+    animation       : animate_pulse 1.5s infinite;
+    flex-direction  : column;
+    align-items     : center;
+    justify-content : center;
+    border          : 2px solid rgb(235, 214, 28);
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family     : 'Kanit', sans-serif;
+}
+.gameNameHeader h1{
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size  : 22px;
+    padding    : 20px;
+    text-align : center;
+    color      : #FFFFFF;
+    animation  : blink 2s linear infinite;
+    font-size  : 27px;
+}
+.menuBtnWrapper {
+    width          : 100%;
+    height         : 300px;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+}
+.menuRow{
+    width          : 100%;
+    height         : 18%;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    align-content  : center;
+    flex-direction : column;
+    margin         : 10px 0;
+}
+.menuBtns{
+    width           : 55%;
+    height          : 100%;
+    border          : 2px solid rgb(235, 214, 28);;
+    border-radius   : 6px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family     : 'Kanit', sans-serif;
+    animation       : blink 2s linear infinite;
+    font-size       : 20px;
+}
+.modalWindowForm{
+    width     : 100%;
+    height    : 100%;
+    background: inherit;
+}
+.formWrapper{
+    width          : 100%;
+    height         : 100%;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+}
+.form{
+    width          : 320px;
+    height         : 260px;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    align-content  : center;
+    justify-content: center;
+}
+#createForm{
+    height: 100%;
+    width : 100%;
+}
+#createForm fieldset{
+    margin       : 0px;
+    padding      : 20px 10px 20px 10px;
+    border-color : rgb(236, 180, 106);
+    background   : rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+#createForm fieldset legend{
+    font-family: 'Kanit', sans-serif;
+    font-size  : 25px;
+    text-shadow: 2px 2px 6px rgb(87, 67, 59);
+    animation  : blink 2s linear infinite;
+}
+.formLine{
+    width          : 100%;
+    height         : 50px;
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
+    justify-content: space-between;
+    font-family    : 'Kanit', sans-serif;
+    font-size      : 20px;
+    animation      : blink 2s linear infinite;
+}
+.formLine input {
+    height          : 25px;
+    width           : 185px;
+    font-family     : 'Kanit', sans-serif;
+    border          : 2px solid rgb(235, 214, 28);;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius   : 6px;
+    color           : rgb(235, 145, 28);
+}
+.btnCreateUser{
+    height          : 40px;
+    margin          : 0 auto;
+    width           : 90px;
+    border          : 2px solid rgb(235, 214, 28);
+    border-radius   : 6px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family     : 'Kanit', sans-serif;
+    animation       : blink 2s linear infinite;
+}
+.modalWindowResults{
+    width     : 100%;
+    height    : 100%;
+    background: inherit;
+}
+.usersResultList{
+    width         : 100%;
+    height        : 90%;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    overflow      : auto;
+}
+.userItem{
+    width          : 95%;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    align-items    : center;
+    margin         : 5px 0px;
+    padding        : 0px 5px;
+    background     : rgb(0,0,0, 0.6);
+    border-radius  : 5px;
+    font-family    : 'Kanit', sans-serif;
+    font-size      : 15px;
+    animation      : blink 2s linear infinite;
+}
+.blockBtnResult{
+    width  : 100%;
+    display: flex;
+}
+.btnBackToMenu{
+    height          : 40px;
+    margin          : 0 auto;
+    width           : 90px;
+    border          : 2px solid rgb(235, 214, 28);
+    border-radius   : 6px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family     : 'Kanit', sans-serif;
+    animation       : blink 2s linear infinite;
+}
+.historyPicture{
+    display             : flex;
+    justify-content     : center;
+    align-items         : flex-end;
+    background-image    : url(./image/orcAttack.jpeg);
+    background-repeat   : no-repeat;
+    background-position : center center;
+    -moz-background-size: cover;
+    -o-background-size  : cover;
+    background-size     : cover;
+    width               : 400px;
+    min-width           : 370px;
+    height              : 550px;
+    transition          : all 2s linear 2s;
+}
+.historyPicture.transparent {
+   display: none
+}
+.prologText{
+    animation    : ani 3.5s forwards;
+    width        : 80%;
+    margin       : 0px 0px 15px 0px;
+    height       : 110px;
+    background   : rgb(237 237 232 / 25%);
+    border       : 2px solid rgb(235, 214, 28);
+    border-radius: 6px;
+    font-family  : 'Kanit', sans-serif;
+    padding      : 5px 10px;
+}
+.prologText span{
+    animation: blink 2s linear infinite;
+}
+.gameLevels{
+    background-image    : url(./image/backgroundLevel.jpeg);
+    background-repeat   : no-repeat;
+    background-position : center center;
+    -moz-background-size: cover;
+    -o-background-size  : cover;
+    background-size     : cover;
+    width               : 400px;
+    min-width           : 370px;
+    height              : 550px;
+    transition          : all 2s linear 2s;
+}
+.levelsWrapper{
+    width          : 100%;
+    height         : 100%;
+    display        : flex;
+    flex-direction : column;
+    align-content  : flex-end;
+    align-items    : center;
+    justify-content: flex-start;
+}
+.infoBattle{
+    width          : 100%;
+    height         : 10%;
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
+    justify-content: space-evenly;
+    background     : rgb(255,255,255, 0.5);
+    border-radius  : 0px 0px 10px 10px;
+    margin         : 0px 0 75px 0;
+    font-family    : 'Kanit', sans-serif;
+}
+.orcPosition{
+    height         : 40%;
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+    align-content  : flex-end;
+}
+.orcPosition img {
+    height: 220px;
+    cursor: url(./image/mech.png), auto;
+   
+}
+.orcPosition img:active{
+    cursor: url(./image/mechActive.png), auto;
+    height: 180px;
+}
+.salute{ 
+    display       : flex;
+    flex-direction: column;
+    width         : 76%;
+    align-content : center;
+    align-items   : flex-end;
+}
+.resultMessage{
+    height         : 30%;
+    width          : 50%;
+    display        : flex;
+    background     : rgb(255,255,255, 0.3);
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+    margin         : 40px auto;
+    font-family    : 'Kanit', sans-serif;
+    border         : 2px solid rgb(235, 214, 28);
+    border-radius  : 6px;
+    animation      : blink 2s linear infinite;
+}
+.userItem p {
+    margin: 0;
+}
+@-webkit-keyframes blink { 
+	0% { color: rgb(221, 236, 57); }
+	50% { color: rgb(235, 214, 28); }
+	100% { color: rgb(173, 252, 26); }
+}
+@keyframes blink {  
+	0% { color: rgb(221, 236, 57); }
+	50% { color: rgb(235, 214, 28); }
+	100% { color: rgb(173, 252, 26); }
+}
+@keyframes animate_pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgb(228, 221, 25, 0.4);
+	}
+	70% {
+		box-shadow: 0 0 0 10px rgba(228, 25, 49, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(228, 25, 49, 0);
+	}
+}
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+.disable{
+    display:none;
+}

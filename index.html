@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="./index.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap" rel="stylesheet">
+    <title>Clicker Game</title>
 </head>
+
 <body>
-    
+    <main class="wrapper">
+        <atticle class="preGamePages">
+            <section class="modalWindowMenu">
+                <header class="gameNameHeader">
+                    <h1>KINGDOM BATTLE</h1>
+                </header>
+                <div class="menuBtnWrapper">
+                    <div class="menuRow">
+                        <button class="menuBtns" id="play">
+                            Play
+                        </button>
+                    </div>
+                    <div class="menuRow">
+                        <button class="menuBtns" id="results">
+                            Results
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="modalWindowForm disable">
+                <div class="formWrapper">
+                    <div class="form">
+                        <form id="createForm" onsubmit="return false">
+                            <fieldset>
+                                <legend>Create account</legend>
+                                <div class="formLine">
+                                    <label for="userNickName">Nickname:</label>
+                                    <input id="userNickName" name="userNickName" type="text"
+                                        placeholder="Write your nickname" required>
+                                </div>
+                                <div class="formLine">
+                                    <label for="userName">Name:</label>
+                                    <input id="userName" name="userName" type="text" placeholder="Write your name"
+                                        required>
+                                </div>
+                                <div class="formLine">
+                                    <label for="userEmail">Email:</label>
+                                    <input id="userEmail" name="userEmail" type="email" placeholder="example@mail.com"
+                                        required>
+                                </div>
+                                <div class="formLine">
+                                    <button type="submit" class="btnCreateUser">Create user</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="modalWindowResults disable">
+                <div class="blockBtnResult">
+                    <button class="btnBackToMenu"> Back</button>
+                </div>
+            </section>
+        </atticle>
+
+        <arcticle class="gameZone disable">
+            <section class="historyPicture disable" id="prolog">
+            </section>
+            <section class="gameLevels disable">
+                <div class="levelsWrapper">
+                    <div class="infoBattle"></div>
+                    <div class="orcPosition"></div>
+                </div>
+            </section>
+        </arcticle>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+    <audio>
+        <source src="./sound/sword.wav" type="audio/wav">
+        Ваш браузер не поддерживает элемент <code>audio</code>.
+    </audio>
 </body>
+
 </html>
